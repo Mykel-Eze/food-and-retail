@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Bridging the gap between farmers and consumers using the latest technologies, efficient processes and utilising food processing facilities.' },
+      { hid: 'description', name: 'description', content: 'We are revolutionising food processing and production.' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'keywords', content: 'Japitini, food, retail, food and retail, Subsistence farmers, Pre-commercial smallholder farmer, Commercial smallholder farmer, Alluvial, farmers' },
       { name: 'author', content: 'Japtini Food & Retail' },

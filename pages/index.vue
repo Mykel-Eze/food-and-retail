@@ -7,7 +7,7 @@
         <div class="container full-height rel">
           <div class="home-txt-side">
             <h1 class="home-title">
-              Upscalng <br> <span class="pry-color">Quality Food</span>
+              Upscaling <br> <span class="pry-color">Quality Food</span>
             </h1>
             <div class="home-txt-desc">
               Together we’re revolutionising food processing and production
