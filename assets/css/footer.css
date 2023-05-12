@@ -1,13 +1,14 @@
 footer {
-    background-color: white;
+    background-color: var(--sec-color);
     padding: 50px 0 10px;
+    color: #FFFFFF;
 }
 footer > .row {
     margin-bottom: 0;
 }
 .footer-contents-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px 30px;
 }
 .footer-content-block {
@@ -20,16 +21,17 @@ h4.footer-sec-title {
     color: #353D46;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
-    font-family: var(--pry-font-medium);
-    letter-spacing: -1.5px;
+    font-family: var(--font-medium);
+    letter-spacing: -0.01em;
+    margin-top: 10px;
 }
 .footer-sec-content {
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    color: #6E7883;
+    color: #FFFFFF;
 }
 .inq.tel-inq {
     margin-top: 5px;
@@ -57,7 +59,8 @@ h4.footer-sec-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 180px;
+    max-width: 330px;
+    gap: 20px;
 }
 .footer-social-wrapper a {
     color: #4D4A6F;
@@ -65,41 +68,11 @@ h4.footer-sec-title {
 footer a:hover {
     text-decoration: underline;
 }
-input#subscriber-email {
-    margin-bottom: 0;
-    padding: 0 15px;
-    height: 46px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    box-shadow: none;
-    font-size: 14px;
-}
-form#newsletter-form .flex-div.input-field {
-    margin: 0;
-    background: rgba(255, 255, 255, 0.721709);
-    border: 1px solid #DDDDDD;
-    box-sizing: border-box;
-    border-radius: 28.5px;
-}
-button.btn.subscribe-submit.pry-bg {
-    height: 38px;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-    background: var(--pry-color);
-    border-radius: 23px;
-    box-shadow: none;
-    text-transform: none;
-    position: relative;
-    min-width: 105px;
-    right: 7px;
-    padding: 0 10px;
-}
 .footer-credit-wrapper {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    border-top: 0.75px solid #FFFFFF;
+    padding: 30px 0 20px;
+    margin-top: 120px;
  }
 .footer-credit-wrapper .copyright-div {
     border-top: 1px solid rgba(158, 158, 158, 0.5);
@@ -113,6 +86,27 @@ button.btn.subscribe-submit.pry-bg {
 }
 .email-inq a span {
     color: #353D46;
+}
+
+footer a.footer-sec-link {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+.footer-sec-content ul li {
+  margin-bottom: 15px;
+}
+.default-icon {
+  display: initial;
+}
+.hover-icon {
+  display: none;
+}
+a:hover .default-icon {
+  display: none;
+}
+a:hover .hover-icon {
+  display: initial;
 }
 
 @media(max-width: 992px) {
@@ -139,5 +133,8 @@ button.btn.subscribe-submit.pry-bg {
         display: block;
         text-align: center;
         margin-bottom: 15px;
+    }
+    .footer-credit-wrapper {
+      font-size: 14px;
     }
 }

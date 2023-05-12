@@ -1,17 +1,29 @@
 /* Navbar Section */
 nav.main-nav{
     position: fixed;
-    background-color: white;
+    background-color: transparent;
     width: 100%;
     box-shadow: none;
     height: 80px;
     z-index: 100;
-    font-family: var(--pry-font);
+    font-family: var(--font);
     font-weight: bold;
     top: 0;
 }
 nav.main-nav.scrolled-nav {
     background-color: white;
+}
+.logo-default {
+  display: initial;
+}
+.logo-scrolled {
+  display: none;
+}
+nav.main-nav.scrolled-nav .logo-default {
+  display: none;
+}
+nav.main-nav.scrolled-nav .logo-scrolled {
+  display: initial;
 }
 nav ul a:hover {
     background-color: transparent;
@@ -29,6 +41,7 @@ nav.main-nav ul > li > a{
     line-height: 18px;
     text-align: center;
     /* text-transform: uppercase; */
+    padding-right: 0;
 }
 nav.main-nav ul > li > a:hover {
     color: var(--pry-color);
@@ -84,7 +97,7 @@ nav.scrolled-nav.main-nav ul#nav-mobile, nav.scrolled-nav.main-nav ul#nav-mobile
     top: 0;
 }
 nav.scrolled-nav a.brand-logo img {
-    width: 168px;
+    width: 160px;
     height: auto;
     top: 0;
 }
@@ -98,7 +111,7 @@ button.nav-pry-btn-2.btn, a.nav-pry-btn-2.btn {
     min-width: 100px;
     font-weight: bold;
     /* margin-bottom: 20px; */
-    font-family: var(--pry-font);
+    font-family: var(--font);
     border: 1px solid var(--pry-color);
     transition: all 1.5ms;
     box-shadow: none;
@@ -136,6 +149,9 @@ button.nav-pry-btn.btn img {
 }
 nav button.nav-pry-btn.btn{
     margin-bottom: 0;
+    height: 45px;
+    font-weight: 600;
+    font-size: 15px;
 }
 /* #nav-mobile li:last-child a:hover{
     background-color: transparent;

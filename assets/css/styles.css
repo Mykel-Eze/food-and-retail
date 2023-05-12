@@ -1,6 +1,6 @@
 :root {
-    --pry-color: #25A9E0;
-    --sec-color: #9ACA46;
+    --pry-color: #8DC63F;
+    --sec-color: #002134;
 
 	  --font: 'raleway', sans-serif;
     --font-bold: 'raleway-bold', sans-serif;
@@ -20,18 +20,18 @@
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-	background: rgba(37, 169, 224, 0.8);
+	background: rgba(0, 33, 52, 0.8);
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(37, 169, 224, 0.4);
+	background: rgba(0, 33, 52, 0.4);
 }
 
 body {
 	font-family: var(--font);
 	height: auto;
     min-height: 100vh;
-    background-color: white;
+    background-color: #F7F8FC;
     color: #353D46;
 }
 h1, h2, h3, h4{
@@ -66,6 +66,9 @@ h5, h6{
 }
 .light-txt{
     font-family: var(--font-light);
+}
+.medium-txt{
+  font-family: var(--font-medium);
 }
 
 .rel{
@@ -191,8 +194,20 @@ img {
     }
 }
 
+@media (max-width: 992px) {
+  .hidden-xs-sm{
+    display: none !important;
+  }
+  .visible-xs-sm{
+    display: block !important;
+  }
+}
 
-/*--------========== Home Page =============---------*/
-
-/*---=== Home section ===---*/
-/*---=== end of Home section ===---*/
+@media (max-width: 600px) {
+  .hidden-xs{
+    display: none !important;
+  }
+  .visible-xs{
+    display: block !important;
+  }
+}

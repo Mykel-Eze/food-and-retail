@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'keywords', content: 'Japitini, food, retail, food and retail, Subsistence farmers, Pre-commercial smallholder farmer, Commercial smallholder farmer, Alluvial, farmers' },
       { name: 'author', content: 'Japtini Food & Retail' },
-      { name: 'theme-color', content: '#9ACA46' }
+      { name: 'theme-color', content: '#002134' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
